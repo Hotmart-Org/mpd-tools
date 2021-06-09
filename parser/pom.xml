@@ -6,7 +6,7 @@
 
 	<groupId>io.lindstrom</groupId>
 	<artifactId>mpd-parser</artifactId>
-	<version>0.9</version>
+	<version>0.9-HOTMART</version>
 	<packaging>jar</packaging>
 
 	<name>mpd-parser</name>
