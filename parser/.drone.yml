@@ -50,7 +50,7 @@ steps:
   settings:
     url: https://mvnrepository.vulcano.rocks
     username: drone
-    pom: pom.xml
+    pom: parser/pom.xml
     force_upload: true
     files:
       - parser/target/*.jar
