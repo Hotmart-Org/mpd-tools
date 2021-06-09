@@ -27,7 +27,7 @@ steps:
   pull: always
   image: hotmart/pipeline-maven:3-jdk-11-slim
   command:
-  - mvn source:jar package dependency:resolve-plugins
+  - parser/mvn source:jar package dependency:resolve-plugins
   environment:
     MAVEN_SETTINGS:
       from_secret: maven_settings
@@ -53,8 +53,8 @@ steps:
     pom: pom.xml
     force_upload: true
     files:
-      - target/*.jar
-      - pom.xml
+      - parser/target/*.jar
+      - parser/pom.xml
   environment:
     ARTIFACTORY_PASSWORD:
       from_secret: artifactory_password
