@@ -28,3 +28,4 @@ validator/build
 validator/out
 /.gradle/
 /.idea/
+/bin/
