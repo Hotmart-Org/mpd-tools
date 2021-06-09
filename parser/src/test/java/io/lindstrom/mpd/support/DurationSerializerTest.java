@@ -26,6 +26,11 @@ public class DurationSerializerTest extends ObjectMapperTestBase<Duration> {
     public void simpleDuration() throws Exception {
         assertEquals(Duration.ofHours(2), read("PT2H"));
     }
+    
+    @Test
+    public void bigDuration() throws Exception {
+    	assertEquals(Duration.parse("PT8.233333587S"), read("PT8.233333587646484423423432423432432434242S"));
+    }
 
     @Test
     public void serialize1() throws Exception {

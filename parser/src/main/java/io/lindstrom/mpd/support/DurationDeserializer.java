@@ -21,7 +21,7 @@ public class DurationDeserializer extends JsonDeserializer<Duration> {
                             "(?:([-+]?[0-9]+)Y)?" +
                             "(?:([-+]?[0-9]+)M)?" +
                             "(?:([-+]?[0-9]+)D)?" +
-                            "(T(?:([-+]?[0-9]+)H)?(?:([-+]?[0-9]+)M)?(?:([-+]?[0-9]+)(?:[.,]([0-9]{0,12}))?S)?)?",
+                            "(T(?:([-+]?[0-9]+)H)?(?:([-+]?[0-9]+)M)?(?:([-+]?[0-9]+)(?:[.,]([0-9]{0,}))?S)?)?",
                     Pattern.CASE_INSENSITIVE);
 
     private static Duration estimateDuration(long years, long months, long days) {
