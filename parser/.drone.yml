@@ -27,7 +27,7 @@ steps:
   pull: always
   image: hotmart/pipeline-maven:3-jdk-11-slim
   command:
-  - parser/mvn source:jar package dependency:resolve-plugins
+  - mvn -f ./parser/pom.xml source:jar package dependency:resolve-plugins
   environment:
     MAVEN_SETTINGS:
       from_secret: maven_settings
