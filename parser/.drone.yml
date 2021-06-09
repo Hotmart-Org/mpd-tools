@@ -2,7 +2,7 @@
 fbm: &filter_branch_master
   when:
     branch:
-    - master
+    - hotmart
     event:
       exclude:
       - pull_request
