@@ -1,7 +1,0 @@
-description:
-impact:
-reportable: false
-pci: false
-products:
-- Transcoder
-squads: []
