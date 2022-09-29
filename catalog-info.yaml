@@ -9,7 +9,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: streaming_team
+  owner: streaming_squad
   system: transcoder
   heimdall:
     reportable: false
@@ -18,3 +18,4 @@ spec:
     - Transcoder
     squads: []
     impact: ''
+
