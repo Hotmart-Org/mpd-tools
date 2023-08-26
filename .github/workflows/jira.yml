@@ -4,13 +4,11 @@ on:
     branches-ignore:
       - main
       - master
-      - develop
       - staging
-      - dependabot/**
-      - translations_**
+
 jobs:
   validate:
     uses: Hotmart-Org/actions/.github/workflows/jira.yaml@master
     secrets: inherit
     with:
-      runs-on: "devops-iac"
+      runs-on: "player-iac"
